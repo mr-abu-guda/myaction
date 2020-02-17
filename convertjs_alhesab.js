@@ -5,5 +5,3 @@ function convert(){{ var myform=document.forms['cform'];w1=myform.D1.options[myf
 function convertval(key1, key2, val){}
 $(document).ready( function(){ 
 $('#form').submit(function(event){update_data();$('html, body').animate({scrollTop: ($("#output"))}, 800);document.activeElement.blur();event.preventDefault();} );
-$('#mainbody').on('click',function(){if($('button.navbar-toggle').is(':visible') && $('a.dropdown-toggle').is(':visible')){$('button.navbar-toggle').click();};});
-} );
