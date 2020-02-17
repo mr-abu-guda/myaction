@@ -1,0 +1,120 @@
+<div dir="rtl" style="text-align: right;" trbidi="on">
+
+
+<html dir="rtl">
+<head>
+
+
+<title>Time Unit Conversion</title>
+
+<link href="https://rawcdn.githack.com/mr-abu-guda/myaction/b3c7334c6a1ac83e4458c430789754b4615d715a/css_alhesab.css" rel="stylesheet"></link>
+
+
+
+
+</head>
+<body>
+
+
+
+
+<div>
+	<div id="topbanner">
+</div>
+<div id="errors">
+</div>
+
+
+<form action="" id="cform" method="post" name="cform" role="form">
+<table class="table table-condensed">
+<tr> 		<td style="width: 48%;"><h3>
+من:</h3>
+</td><td style="width: 4%;">&nbsp;</td><td style="width: 48%;"><h3>
+إلى:</h3>
+</td>             </tr>
+<tr>                 <td><input autocomplete="off" class="form-control" id="T1" name="T1" onchange="convert();" onkeyup="convert(); return true;" type="text" value="1" />
+</td>                 <td class="text-center" style="vertical-align: middle;">=</td>         	<td><input autocomplete="off" class="form-control" id="T2" name="T2" readonly="" type="text" value="" />
+</td>             </tr>
+<tr> 		<td><small><span id="N1"></span></small></td> 		<td>&nbsp;</td> 		<td><small><span id="N2"></span></small></td>             </tr>
+<tr> 		<td><select class="form-control" name="D1" onchange="convert_scroll();" size="10">
+<option value="6">العام</option>
+<option value="0">ألف عام</option>
+<option value="1">قرن</option>
+<option value="2">العقد</option>
+<option value="7">الشهر</option>
+<option value="8">أسبوعين</option>
+<option value="9">الأسبوع</option>
+<option selected="" value="10">اليوم</option>
+<option value="11">ساعة</option>
+<option value="12">دقيقة</option>
+<option value="13">ثانية</option>
+<option value="14">ميلي ثانية</option>
+<option value="15">ميكروثانية</option>
+<option value="16">نانوثانية</option>
+<option value="5">السنة المدارية</option>
+<option value="4">سنة ميلادية</option>
+<option value="3">جوليان العام</option>
+</select>                </td> 		<td>&nbsp;</td> 		<td><select class="form-control" name="D2" onchange="convert_scroll();" size="10">
+<option value="6">العام</option>
+<option value="0">ألف عام</option>
+<option value="1">قرن</option>
+<option value="2">العقد</option>
+<option value="7">الشهر</option>
+<option value="8">أسبوعين</option>
+<option value="9">الأسبوع</option>
+<option value="10">اليوم</option>
+<option value="11">ساعة</option>
+<option value="12">دقيقة</option>
+<option selected="" value="13">ثانية</option>
+<option value="14">ميلي ثانية</option>
+<option value="15">ميكروثانية</option>
+<option value="16">نانوثانية</option>
+<option value="5">السنة المدارية</option>
+<option value="4">سنة ميلادية</option>
+<option value="3">جوليان العام</option>
+</select></td></tr>
+</table>
+
+
+</form>
+
+<a href="https://kokabalmohtarefin.blogspot.com/" id="ehseb">مدونة كوكب المحترفين</a>	
+
+</div>
+
+
+
+<script src="https://rawcdn.githack.com/mr-abu-guda/myaction/b3c7334c6a1ac83e4458c430789754b4615d715a/jquery_alhesab.js"></script>
+<script async="" src="https://rawcdn.githack.com/mr-abu-guda/myaction/b3c7334c6a1ac83e4458c430789754b4615d715a/convertjs_alhesab.js" type="text/javascript"></script>
+<script>
+//<!--
+function convert_scroll(){convert();$('html, body').animate({scrollTop: ($("#topbanner").offset().top-50)}, 800);}
+var module='time-unit-conversion';function converterclick(id1, id2){var myform = document.forms['cform'];myform.D1.selectedIndex = id1;myform.D2.selectedIndex = id2;
+convert_scroll();}$(window).load( function(){
+$( "#backbutton" ).click(function() {document.location='/';});
+convert();
+$('#converter_0_1').click(function() {converterclick(0, 1);return false;});
+$('#converter_1_0').click(function() {converterclick(1, 0);return false;});
+$('#converter_1_6').click(function() {converterclick(1, 6);return false;});
+$('#converter_6_1').click(function() {converterclick(6, 1);return false;});
+$('#converter_6_10').click(function() {converterclick(6, 10);return false;});
+$('#converter_10_6').click(function() {converterclick(10, 6);return false;});
+$('#converter_12_13').click(function() {converterclick(12, 13);return false;});
+$('#converter_13_12').click(function() {converterclick(13, 12);return false;});
+$('#converter_13_14').click(function() {converterclick(13, 14);return false;});
+$('#converter_14_13').click(function() {converterclick(14, 13);return false;});
+$('#converter_15_16').click(function() {converterclick(15, 16);return false;});
+$('#converter_16_15').click(function() {converterclick(16, 15);return false;});
+$('#converter_14_12').click(function() {converterclick(14, 12);return false;});
+$('#converter_12_14').click(function() {converterclick(12, 14);return false;});
+; convert();});
+//-->
+</script>
+<script type="text/javascript">
+var gbrt=["ألف عام","قرن","العقد","جوليان العام","سنة ميلادية","السنة المدارية","العام","الشهر","أسبوعين","الأسبوع","اليوم","ساعة","دقيقة","ثانية","ميلي ثانية","ميكروثانية","نانوثانية"];
+var factors=[2.7397260273973E-6,2.7397260273973E-5,0.00027397260273973,0.0027378507871321,0.0027379070069885,0.0027379092633269,0.0027397260273973,0.032853922534821,0.071428571428571,0.14285714285714,1,24,1440,86400,86400000,86400000000,86400000000000];
+</script>
+
+
+
+</body></html></div>
